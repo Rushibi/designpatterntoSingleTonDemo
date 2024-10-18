@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            SingleTon s1 = SingleTon.getSingleTonInstance();
+            Singleton s1 = Singleton.getSingletoninstance();
 
-            SingleTon s2 = SingleTon.getSingleTonInstance();
+            Singleton s2 = Singleton.getSingletoninstance();
 
             if (s1 == s2)
             {

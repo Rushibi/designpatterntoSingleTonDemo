@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StackExchange.Redis;
 
 namespace SingleTonDemo
 {
@@ -13,7 +14,7 @@ namespace SingleTonDemo
         private ConnectionMultiplexer conn;
         private Singleton()
         {
-            conn = ConnectionMultiplexer.Connect("localhost")
+            conn = ConnectionMultiplexer.Connect("localhost");
         }
         public static Singleton getSingletoninstance()
         {
